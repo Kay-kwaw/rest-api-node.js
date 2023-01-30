@@ -10,8 +10,10 @@ const alienSchema = new mongoose.Schema({
         type : 'string',
         required : true
     },
-    Genders : {
+    gender : {
         type : 'string',
         required : true
     },
 })
+
+module.exports = mongoose.model('Alien', alienSchema)
